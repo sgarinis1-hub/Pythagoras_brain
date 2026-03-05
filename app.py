@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Ρύθμιση API
-genai.configure(api_key="ΤΟ_API_KEY_ΣΟΥ")
+genai.configure(api_key="AIzaSyBL4TvVPQYqY7skvdZXqRaddrVVR4fmqBI")
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # Λειτουργία API για την HTML
