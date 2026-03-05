@@ -8,7 +8,7 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 # Λειτουργία API για την HTML
 query_params = st.query_params
 if "q" in query_params:
-    prompt = f"Είσαι ο Πυθαγόρας. Απάντησε σύντομα αλλά σωστά σαν ένας κανονικό AI LLM (1 πρόταση) στα Ελληνικά: {query_params['q']}"
+    prompt = f"Είσαι ο Πυθαγόρας. Απάντησε σύντομα αλλά σωστά σαν ένας κανονικό AI LLM (κρατα λιγο χαρακτηρα αλλα τιποτα το υπερβολικο,ισα ισα να ειναι ενδιαφερον) στα Ελληνικά: {query_params['q']}"
     response = model.generate_content(prompt)
     st.write(response.text)
     st.stop()
